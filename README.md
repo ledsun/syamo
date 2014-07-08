@@ -6,6 +6,7 @@ Gitlabの更新情報をChartworkに通知するサーバ
 ## Usage
 
 herokuに配置します。
+事前に、herokuのアカウントを作成し、`heroku toolbelt`をインストールしてください。
 
 秘密情報を環境変数を設定します。
 
@@ -23,7 +24,7 @@ heroku config:add GITLAB_URL=YYY
 heroku config:add GITLAB_TOKEN=ZZZ
 git push heroku master
 ```
-
+※myappはherokuに作成するアプリケーション名です。好きな名前に変更してください。
 
 gitlabのwebhooksを登録します。
 

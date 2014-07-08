@@ -1,0 +1,29 @@
+[hr]
+before: {{before}}
+after: {{after}}
+ref: {{ref}}
+user_id: {{user_id}}
+user_name: {{user_name}}
+project_id: {{project_id}}
+{{#repository}}
+repository:
+  name: {{name}}
+  url: {{url}}
+  description: {{description}}
+  homepage: {{homepage}}
+{{/repository}}
+{{#commits}}
+  commits:
+    id: {{id}}
+    message: {{{message}}}
+    timestamp: {{timestamp}}
+    url: {{url}}
+    {{#author}}
+    author:
+      name: {{name}}
+      email: {{name}}
+    {{/author}}
+{{/commits}}
+total_commits_count: {{total_commits_count}}
+
+raw: {{{json}}}

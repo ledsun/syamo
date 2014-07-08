@@ -1,0 +1,36 @@
+{
+  "name": "syamo",
+  "version": "0.0.2",
+  "description": "web hook api for ChatWork",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "^2.14.5",
+    "connect-route": "^0.1.4",
+    "debug": "^1.0.2",
+    "hogan.js": "^2.0.0",
+    "node-gitlab": "^0.1.1",
+    "promise": "^5.0.0",
+    "simple-cw-node": "^0.1.4",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "frisby": "^0.8.0",
+    "grunt": "^0.4.4",
+    "grunt-jasmine-node": "^0.2.1",
+    "grunt-nodemon": "^0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@developer.luxiar.jp:shigeru.nakajima/chabot.git"
+  },
+  "keywords": [
+    "web",
+    "hook",
+    "ChatWork"
+  ],
+  "author": "shigeru.nakajima@luxiar.com",
+  "license": "MIT"
+}

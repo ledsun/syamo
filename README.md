@@ -42,6 +42,16 @@ GitlabのProjectのSettingsからwebhooksを登録します。
 http://myapp.herokuapp.com/gitlab/チャットルームID
 ```
 
+## Customize
+
+- テンプレートを変更することで通知内容を変更することが出来ます。
+- テンプレートは`template`ディレクトリに入っています。
+- テンプレートはmustacheテンプレートです。
+- テンプレート名は更新種別[.チャットルームID].mustacheです。
+  - 更新種別はissue、merge_request、pushの3種類です。
+  - チャットルームIDを指定することで、特定のチャットルームにだけ適用することができます。
+- rawプロパティを参照すると全ての情報をJSON形式で表示します。
+
 ## Development
 
 ```

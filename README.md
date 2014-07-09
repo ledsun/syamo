@@ -4,8 +4,7 @@ syamo
 Gitlabの更新情報(Push、Issue、MergeRequest)をChartworkに通知するサーバです。
 
 ## Usage
-
-herokuに配置します。
+### herokuに配置
 事前に、herokuのアカウントを作成し、`heroku toolbelt`をインストールしてください。
 
 秘密情報を環境変数を設定します。
@@ -26,6 +25,7 @@ git push heroku master
 
 ※ myappはherokuに作成するアプリケーション名です。好きな名前に変更してください。
 
+### 配置確認
 配置に成功したか確認します。
 
 ```
@@ -35,8 +35,8 @@ cd tools
 
 ※ 第一引数にherokuのアプリケーション名を、第二引数チャットルームIDを指定してください。
 
-
-gitlabのProjectのSettingsからwebhooksを登録します。
+### Gitlabのwebhook設定
+GitlabのProjectのSettingsからwebhooksを登録します。
 
 ```
 http://myapp.herokuapp.com/gitlab/チャットルームID
@@ -53,3 +53,11 @@ grunt
 ```
 
 ※ 環境依存のためテストは失敗します。
+
+
+## Why Syamo?
+参考にしたアプリケーションの名前をもじってつけました。
+
+https://github.com/astronaughts/chabot
+
+Thank you!

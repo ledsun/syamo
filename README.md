@@ -3,6 +3,8 @@ syamo
 
 Gitlabの更新情報(Push、Issue、MergeRequest)をChartworkに通知するサーバです。
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ## Usage
 ### herokuに配置
 事前に、herokuのアカウントを作成し、`heroku toolbelt`をインストールしてください。

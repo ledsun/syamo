@@ -1,0 +1,11 @@
+{
+  "name": "syamo",
+  "description": "web hook api for ChatWork",
+  "repository": "https://github.com/ledsun/syamo",
+  "keywords": ["web", "hook", "ChatWork"],
+  "env": {
+    "CHATWORK_TOKEN": "(YOUR_CHATWORK_TOKEN)",
+    "GITLAB_URL": "(YOUR_GITLAB_URL)",
+    "GITLAB_TOKEN": "(YOUR_GITLAB_TOKEN)"
+  }
+}

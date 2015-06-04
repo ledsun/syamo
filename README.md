@@ -38,9 +38,12 @@ cd tools
 ### Gitlabのwebhook設定
 GitlabのProjectのSettingsからwebhooksを登録します。
 
-```
-http://myapp.herokuapp.com/gitlab/チャットルームID
-```
+1. gitlabのプロジェクトを開きます
+1. `Setting`を開きます
+1. `Web Hooks`を開きます
+1. `URL`に http://myapp.herokuapp.com/gitlab/チャットルームID （数字のみ） を入れます
+1. `Push events`のチェックを入れます
+1. `Add Web Hook`ボタンを押します
 
 ## Customize
 
@@ -54,16 +57,30 @@ http://myapp.herokuapp.com/gitlab/チャットルームID
 
 ## Development
 
+bash
+
 ```
 npm install
 export CHATWORK_TOKEN=XXX
 export GITLAB_URL=YYY
 export GITLAB_TOKEN=ZZZ
-grunt
+npm start
+```
+
+fish
+
+```
+npm install
+env CHATWORK_TOKEN=XXX GITLAB_URL=YYY GITLAB_TOKEN=ZZZ npm start
+```
+
+## Test
+
+```
+npm test
 ```
 
 ※ 環境依存のためテストは失敗します。
-
 
 ## Why Syamo?
 参考にしたアプリケーションの名前をもじってつけました。

@@ -1,9 +1,0 @@
-{
-    "validthis" : true
-  , "laxcomma"  : true
-  , "laxbreak"  : true
-  , "node"   : true
-  , "boss"      : true
-  , "expr"      : true
-  , "asi"       : true
-}

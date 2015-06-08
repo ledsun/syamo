@@ -4,8 +4,8 @@
   "version": "0.0.2",
   "author": "shigeru.nakajima@luxiar.com",
   "dependencies": {
-    "babel": "^5.1.13",
-    "bluebird": "^2.9.26",
+    "babel": "^5.5.5",
+    "bluebird": "^2.9.27",
     "connect": "^2.14.5",
     "connect-route": "^0.1.4",
     "debug": "^1.0.2",
@@ -19,9 +19,9 @@
     "jasmine-node": "^1.14.5"
   },
   "keywords": [
-    "web",
+    "ChatWork",
     "hook",
-    "ChatWork"
+    "web"
   ],
   "license": "MIT",
   "main": "app.js",

@@ -6,7 +6,8 @@
   "dependencies": {
     "babel": "^5.5.5",
     "bluebird": "^2.9.27",
-    "connect": "^2.14.5",
+    "body-parser": "^1.12.4",
+    "connect": "^3.3.5",
     "connect-route": "^0.1.4",
     "debug": "^1.0.2",
     "hogan.js": "^2.0.0",

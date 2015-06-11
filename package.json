@@ -4,19 +4,19 @@
   "version": "0.0.2",
   "author": "shigeru.nakajima@luxiar.com",
   "dependencies": {
-    "babel": "^5.5.5",
+    "babel": "^5.5.6",
     "bluebird": "^2.9.27",
     "body-parser": "^1.12.4",
     "connect": "^3.3.5",
-    "connect-route": "^0.1.4",
-    "debug": "^1.0.2",
-    "hogan.js": "^2.0.0",
-    "node-gitlab": "^0.1.1",
+    "connect-route": "^0.1.5",
+    "debug": "^2.2.0",
+    "hogan.js": "^3.0.2",
+    "node-gitlab": "^1.0.0",
     "simple-cw-node": "^0.1.4",
-    "underscore": "^1.6.0"
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "frisby": "^0.8.0",
+    "frisby": "^0.8.5",
     "jasmine-node": "^1.14.5"
   },
   "keywords": [

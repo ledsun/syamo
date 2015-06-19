@@ -53,14 +53,14 @@ npm install
 export CHATWORK_TOKEN=XXX
 export GITLAB_URL=YYY
 export GITLAB_TOKEN=ZZZ
-npm start
+npm run watch
 ```
 
 fish
 
 ```
 npm install
-env CHATWORK_TOKEN=XXX GITLAB_URL=YYY GITLAB_TOKEN=ZZZ npm start
+env CHATWORK_TOKEN=XXX GITLAB_URL=YYY GITLAB_TOKEN=ZZZ npm run watch
 ```
 
 ## Test

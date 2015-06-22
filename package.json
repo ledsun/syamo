@@ -13,7 +13,8 @@
     "hogan.js": "^3.0.2",
     "node-gitlab": "^1.0.0",
     "simple-cw-node": "^0.1.4",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
     "frisby": "^0.8.5",

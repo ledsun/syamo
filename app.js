@@ -4,8 +4,11 @@ import connectRoute from 'connect-route'
 import objectKindParser from './lib/objectKindParser'
 import gitlab from './lib/gitlab'
 
+import checkIgnore from './lib/check-ignore'
+
 let gitlabMiddleware = connect()
   .use(objectKindParser)
+  .use(checkIgnore)
   .use(gitlab)
 
 connect()

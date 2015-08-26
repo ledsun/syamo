@@ -53,7 +53,11 @@ frisby.create('mr')
     .expectBodyContains('OK')
     .toss();
 
-frisby.create('merge_statusがuncheckedのmrは無視します。')
+// 2015/08/26
+// 以前は、GitlabがMRのOpen時にuncheckedとcan_be_mergedを二つ送ってきた。
+// can_be_mergedのみを通していた。
+// いつの間にかcan_be_mergedを送って来なくなった。uncheckedを通すことにした。
+frisby.create('merge_statusがuncheckedのmrを通します。')
     .post('http://localhost:3000/gitlab/20003286', uncheckedMrData, {
         json: true
     })

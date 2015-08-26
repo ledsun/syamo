@@ -58,7 +58,7 @@ frisby.create('merge_statusがuncheckedのmrは無視します。')
         json: true
     })
     .expectStatus(200)
-    .expectBodyContains('Ignore')
+    .expectBodyContains('OK')
     .toss();
 
 frisby.create('stateがmergedのmrは無視します。')

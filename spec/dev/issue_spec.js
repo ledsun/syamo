@@ -28,37 +28,37 @@ var issueData = {
 };
 
 frisby.create('issue')
-    .post('http://localhost:3000/gitlab/20105295', issueData, {
-        json: true
-    })
-    .expectStatus(200)
-    .expectBodyContains('OK')
-    .toss();
+  .post('http://localhost:3000/gitlab/20105295', issueData, {
+    json: true
+  })
+  .expectStatus(200)
+  .expectBodyContains('OK')
+  .toss();
 
 frisby.create('直前と全く同じissueは無視します。')
-    .post('http://localhost:3000/gitlab/20105295', issueData, {
-        json: true
-    })
-    .expectStatus(200)
-    .expectBodyContains('Ignore')
-    .toss();
+  .post('http://localhost:3000/gitlab/20105295', issueData, {
+    json: true
+  })
+  .expectStatus(200)
+  .expectBodyContains('Ignore')
+  .toss();
 
 frisby.create('異なるチャットに送る場合は別のissueとして扱います。')
-    .post('http://localhost:3000/gitlab/20003286', issueData, {
-        json: true
-    })
-    .expectStatus(200)
-    .expectBodyContains('OK')
-    .toss();
+  .post('http://localhost:3000/gitlab/20003286', issueData, {
+    json: true
+  })
+  .expectStatus(200)
+  .expectBodyContains('OK')
+  .toss();
 
 frisby.create('actionがupdateなissueは無視します。')
-    .post('http://localhost:3000/gitlab/123456', extend({}, issueData, {
-        object_attributes:{
-            action:'update'
-        }
-    }), {
-        json: true
-    })
-    .expectStatus(200)
-    .expectBodyContains('Ignore')
-    .toss();
+  .post('http://localhost:3000/gitlab/123456', extend({}, issueData, {
+    object_attributes: {
+      action: 'update'
+    }
+  }), {
+    json: true
+  })
+  .expectStatus(200)
+  .expectBodyContains('Ignore')
+  .toss();

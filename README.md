@@ -13,6 +13,10 @@ Gitlabの更新情報(Push、Issue、MergeRequest)をChartworkに通知するサ
 - GITLAB_URL:gitlab apiのurl(例:https://gitlab.com/api/v3)
 - GITLAB_TOKEN:gitlab apiのトークン
 
+環境変数を設定します。
+
+- NODE_ENV:production 本番環境ではassertを削除します。
+
 
 ### 配置確認
 配置に成功したか確認します。

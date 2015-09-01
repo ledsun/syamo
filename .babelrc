@@ -1,0 +1,12 @@
+{
+  "env": {
+    "plugins": [
+      "babel-plugin-espower"
+    ],
+    "production": {
+      "plugins": [
+        "babel-plugin-unassert"
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@
   "env": {
     "CHATWORK_TOKEN": "(YOUR_CHATWORK_TOKEN)",
     "GITLAB_URL": "(YOUR_GITLAB_URL)",
-    "GITLAB_TOKEN": "(YOUR_GITLAB_TOKEN)"
+    "GITLAB_TOKEN": "(YOUR_GITLAB_TOKEN)",
+    "NODE_ENV": "production"
   }
 }

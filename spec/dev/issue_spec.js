@@ -53,7 +53,7 @@ frisby.create('異なるチャットに送る場合は別のissueとして扱い
 
 frisby.create('actionがupdateなissueは無視します。')
     .post('http://localhost:3000/gitlab/123456', extend({}, issueData, {
-        object_kind:{
+        object_attributes:{
             action:'update'
         }
     }), {

@@ -10,7 +10,7 @@ describe('An authentication', () => {
       .end((err, res) => {
         assert.notEqual(err, null)
         assert.equal(err.status, 500)
-        assert.equal(res.text, "ChatWork NG : You don't have permission to send messages in this room")
+        assert.equal(res.text, "ChatWork NG : 403")
         done()
       })
   })

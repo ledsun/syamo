@@ -8,6 +8,7 @@ import suppressor from './lib/suppressor'
 import debug from './lib/debug'
 import sendIgnore from './lib/sendIgnore'
 import sendMessage from './lib/sendMessage'
+import sendChatwork from './lib/sendChatwork'
 import sendOK from './lib/sendOK'
 
 
@@ -18,6 +19,7 @@ let gitlabMiddleware = connect()
   .use(debug)
   .use(sendIgnore)
   .use(sendMessage)
+  .use(sendChatwork)
   .use(sendOK)
 
 connect()

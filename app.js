@@ -6,6 +6,7 @@ import objectKindParser from './lib/objectKindParser'
 import AvoidingDoubleTransmission from './lib/AvoidingDoubleTransmission'
 import suppressor from './lib/suppressor'
 import debug from './lib/debug'
+import sendIgnore from './lib/sendIgnore'
 import gitlab from './lib/gitlab'
 
 let gitlabMiddleware = connect()
@@ -13,6 +14,7 @@ let gitlabMiddleware = connect()
   .use(new AvoidingDoubleTransmission())
   .use(suppressor)
   .use(debug)
+  .use(sendIgnore)
   .use(gitlab)
 
 connect()

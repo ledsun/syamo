@@ -7,7 +7,7 @@ import AvoidingDoubleTransmission from './lib/AvoidingDoubleTransmission'
 import suppressor from './lib/suppressor'
 import debug from './lib/debug'
 import sendIgnore from './lib/sendIgnore'
-import gitlab from './lib/gitlab'
+import sendMessage from './lib/sendMessage'
 
 let gitlabMiddleware = connect()
   .use(objectKindParser)
@@ -15,7 +15,7 @@ let gitlabMiddleware = connect()
   .use(suppressor)
   .use(debug)
   .use(sendIgnore)
-  .use(gitlab)
+  .use(sendMessage)
 
 connect()
   .use(bodyParser.json())

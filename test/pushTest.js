@@ -32,18 +32,6 @@ describe('Push', () => {
       })
   })
 
-  it('use a template for the chatroom.', (done) => {
-    request
-      .post('http://localhost:3000/gitlab/20003286')
-      .send(pushData)
-      .end((err, res) => {
-        assert.equal(err, null)
-        assert.equal(res.status, 200)
-        assert.equal(res.text, 'OK')
-        done()
-      })
-  })
-
   it('is ignored by total_commits_count 0', (done) => {
     request
       .post('http://localhost:3000/gitlab/20105295')

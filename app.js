@@ -5,9 +5,11 @@ import objectKindParser from './lib/objectKindParser'
 import gitlab from './lib/gitlab'
 
 import checkIgnore from './lib/check-ignore'
+import AvoidingDoubleTransmission from './lib/AvoidingDoubleTransmission'
 
 let gitlabMiddleware = connect()
   .use(objectKindParser)
+  .use(new AvoidingDoubleTransmission())
   .use(checkIgnore)
   .use(gitlab)
 

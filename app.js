@@ -8,6 +8,8 @@ import suppressor from './lib/suppressor'
 import debug from './lib/debug'
 import sendIgnore from './lib/sendIgnore'
 import sendMessage from './lib/sendMessage'
+import sendOK from './lib/sendOK'
+
 
 let gitlabMiddleware = connect()
   .use(objectKindParser)
@@ -16,6 +18,7 @@ let gitlabMiddleware = connect()
   .use(debug)
   .use(sendIgnore)
   .use(sendMessage)
+  .use(sendOK)
 
 connect()
   .use(bodyParser.json())

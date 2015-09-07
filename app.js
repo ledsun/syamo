@@ -7,7 +7,7 @@ import AvoidingDoubleTransmission from './lib/AvoidingDoubleTransmission'
 import suppressor from './lib/suppressor'
 import debug from './lib/debug'
 import sendIgnore from './lib/sendIgnore'
-import sendMessage from './lib/sendMessage'
+import gitlabInfo from './lib/gitlabInfo'
 import sendChatwork from './lib/sendChatwork'
 import format from './lib/format'
 import sendOK from './lib/sendOK'
@@ -19,7 +19,7 @@ let gitlabMiddleware = connect()
   .use(suppressor)
   .use(debug)
   .use(sendIgnore)
-  .use(sendMessage)
+  .use(gitlabInfo)
   .use(format)
   .use(sendChatwork)
   .use(sendOK)

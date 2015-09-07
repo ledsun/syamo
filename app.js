@@ -9,6 +9,7 @@ import debug from './lib/debug'
 import sendIgnore from './lib/sendIgnore'
 import sendMessage from './lib/sendMessage'
 import sendChatwork from './lib/sendChatwork'
+import format from './lib/format'
 import sendOK from './lib/sendOK'
 
 
@@ -19,6 +20,7 @@ let gitlabMiddleware = connect()
   .use(debug)
   .use(sendIgnore)
   .use(sendMessage)
+  .use(format)
   .use(sendChatwork)
   .use(sendOK)
 

@@ -79,4 +79,20 @@ describe('Issue', () => {
         done()
       })
   })
+
+  it('is ignored by close action.', (done) => {
+    request
+      .post('http://localhost:3000/gitlab/123456')
+      .send(Object.assign({}, issueData, {
+        object_attributes: {
+          action: 'close'
+        }
+      }))
+      .end((err, res) => {
+        assert.equal(err, null)
+        assert.equal(res.status, 200)
+        assert.equal(res.text, 'Ignore')
+        done()
+      })
+  })
 })

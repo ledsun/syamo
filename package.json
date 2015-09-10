@@ -12,12 +12,12 @@
     "babel-runtime": "^5.8.20",
     "bluebird": "^2.9.34",
     "body-parser": "^1.13.3",
+    "conncet-post-chatwork-message": "0.0.1",
     "connect": "^3.4.0",
     "connect-route": "^0.1.5",
     "debug": "^2.2.0",
     "hogan.js": "^3.0.2",
     "node-gitlab": "^1.2.1",
-    "post-chatwork-message": "0.0.2",
     "underscore": "^1.8.3",
     "xtend": "^4.0.0"
   },

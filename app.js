@@ -6,5 +6,5 @@ import gitlabMiddleware from './lib/gitlabMiddleware'
 
 connect()
   .use(bodyParser.json())
-  .use(connectRoute(router => router.post('/gitlab/:chatId', gitlabMiddleware)))
+  .use('/gitlab', connectRoute(router => router.post('/:chatId', gitlabMiddleware)))
   .listen(process.env.PORT || 3000);

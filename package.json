@@ -12,7 +12,7 @@
     "babel-runtime": "^5.8.25",
     "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
-    "conncet-post-chatwork-message": "0.0.3",
+    "conncet-post-chatwork-message": "0.0.4",
     "connect": "^3.4.0",
     "connect-route": "^0.1.5",
     "debug": "^2.2.0",

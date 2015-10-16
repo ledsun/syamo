@@ -25,7 +25,7 @@ const issueData = {
     url: 'https://developer.luxiar.jp/shigeru.nakajima/chabot/issues/4',
     action: 'open'
   }
-};
+}
 
 describe('Issue', () => {
   it('is ok.', (done) => {

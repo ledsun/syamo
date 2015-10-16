@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "indent": [
+      1,
+      2
+    ],
+    "quotes": [
+      1,
+      "single"
+    ],
+    "linebreak-style": [
+      1,
+      "unix"
+    ],
+    "semi": [
+      1,
+      "never"
+    ],
+    "no-console": 0
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "globals": {
+    "describe": true,
+    "it": true
+  }
+}

@@ -5,40 +5,40 @@ import request from 'superagent'
 // ユーザがプロジェクトに参加していないが、プロジェクトのグループに参加している場合を再現するために
 // https://developer.luxiar.jp/up-frontier/prism のIDを使います。
 const mrData = {
-    "object_kind": "merge_request",
-    "object_attributes": {
-      "id": 445,
-      "target_branch": "master",
-      "source_branch": "ms-viewport",
-      "source_project_id": 14,
-      "author_id": 2,
-      "assignee_id": 2,
-      "title": "MS-Viewport",
-      "created_at": "2013-12-03T17:23:34Z",
-      "updated_at": "2013-12-03T17:23:34Z",
-      "st_commits": null,
-      "st_diffs": null,
-      "milestone_id": null,
-      "state": "opened",
-      "merge_status": "can_be_merged",
-      "target_project_id": 62,
-      "iid": 18,
-      "description": " abc & 'hoge' "
+    'object_kind': 'merge_request',
+    'object_attributes': {
+      'id': 445,
+      'target_branch': 'master',
+      'source_branch': 'ms-viewport',
+      'source_project_id': 14,
+      'author_id': 2,
+      'assignee_id': 2,
+      'title': 'MS-Viewport',
+      'created_at': '2013-12-03T17:23:34Z',
+      'updated_at': '2013-12-03T17:23:34Z',
+      'st_commits': null,
+      'st_diffs': null,
+      'milestone_id': null,
+      'state': 'opened',
+      'merge_status': 'can_be_merged',
+      'target_project_id': 62,
+      'iid': 18,
+      'description': ' abc & \'hoge\' '
     }
   },
   uncheckedMrData = Object.assign({}, mrData, {
     object_attributes: Object.assign({}, mrData.object_attributes, {
-      "merge_status": "unchecked"
+      'merge_status': 'unchecked'
     })
   }),
   mergedMrData = Object.assign({}, mrData, {
     object_attributes: Object.assign({}, mrData.object_attributes, {
-      "state": "merged"
+      'state': 'merged'
     })
   }),
   unknownMrData = Object.assign({}, mrData, {
     object_attributes: Object.assign({}, mrData.object_attributes, {
-      "target_project_id": 14
+      'target_project_id': 14
     })
   })
 

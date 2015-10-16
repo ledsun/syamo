@@ -11,11 +11,11 @@ let url = `http://${process.argv[2]}.herokuapp.com/gitlab/${process.argv[3]}`
 request
   .post(url)
   .send(message)
-  .end(function(err, res) {
+  .end(function(err) {
     if (err) {
       console.error(err)
       process.exit(1)
     }
 
     console.log('OK')
-  });
+  })

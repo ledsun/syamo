@@ -10,7 +10,6 @@
     "babel": "^5.8.23",
     "babel-plugin-unassert": "^1.2.0",
     "babel-runtime": "^5.8.25",
-    "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
     "conncet-post-chatwork-message": "0.0.4",
     "connect": "^3.4.0",

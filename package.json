@@ -7,12 +7,12 @@
     "url": "https://github.com/ledsun/syamo/issues"
   },
   "dependencies": {
-    "babel": "^5.8.23",
+    "babel": "^5.8.35",
     "babel-plugin-unassert": "^1.2.0",
     "babel-runtime": "^5.8.25",
-    "body-parser": "^1.14.1",
+    "body-parser": "^1.15.0",
     "conncet-post-chatwork-message": "0.0.4",
-    "connect": "^3.4.0",
+    "connect": "^3.4.1",
     "connect-route": "^0.1.5",
     "debug": "^2.2.0",
     "hogan.js": "^3.0.2",
@@ -20,13 +20,13 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "babel-plugin-espower": "^1.0.0",
-    "eslint": "^1.6.0",
+    "babel-plugin-espower": "^1.1.0",
+    "eslint": "^1.10.3",
     "espower-babel": "^3.3.0",
-    "mocha": "^2.3.3",
-    "nodemon": "^1.7.1",
-    "power-assert": "^1.1.0",
-    "superagent": "^1.4.0"
+    "mocha": "^2.4.5",
+    "nodemon": "^1.8.1",
+    "power-assert": "^1.2.0",
+    "superagent": "^1.7.2"
   },
   "homepage": "https://github.com/ledsun/syamo",
   "keywords": [

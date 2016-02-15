@@ -23,6 +23,7 @@
     "babel-plugin-espower": "^1.1.0",
     "eslint": "^1.10.3",
     "espower-babel": "^3.3.0",
+    "foreman": "^1.4.1",
     "mocha": "^2.4.5",
     "nodemon": "^1.8.1",
     "power-assert": "^1.2.0",
@@ -41,8 +42,9 @@
     "url": "git@github.com:ledsun/syamo.git"
   },
   "scripts": {
+    "dev": "nf run npm run watch",
     "start": "babel-node app.js",
-    "test": "mocha --require espower-babel/guess",
+    "test": "mocha --require espower-babel/guess -c",
     "watch": "nodemon --exec babel-node -- app.js"
   }
 }

@@ -22,7 +22,7 @@ Gitlabの更新情報(Push、Issue、MergeRequest)をChartworkに通知するサ
 配置に成功したか確認します。
 
 ```
-babel-node tools/testHeroku.js myapp 20003286
+node tools/testHeroku.js myapp 20003286
 ```
 
 ※ 第一引数にherokuのアプリケーション名を、第二引数チャットルームIDを指定してください。

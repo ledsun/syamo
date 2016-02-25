@@ -1,3 +1,5 @@
 {{#object_attributes}}[info][title]8-) MR#{{iid}} {{{title}}}[/title]{{author_name}} : {{source_branch}} → {{target_branch}} | 担当：{{assignee_name}}
 {{url}}[hr]{{{description}}}
-[/info]{{/object_attributes}}
+[/info]{{#assignee_chatwark_id}}
+[To:{{assignee_chatwark_id}}]レビューお願いします！(bow){{/assignee_chatwark_id}}
+{{/object_attributes}}

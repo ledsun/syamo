@@ -12,7 +12,7 @@ const mrData = {
       'source_branch': 'ms-viewport',
       'source_project_id': 14,
       'author_id': 2,
-      'assignee_id': 2,
+      'assignee_id': 6,
       'title': 'MS-Viewport',
       'created_at': '2013-12-03T17:23:34Z',
       'updated_at': '2013-12-03T17:23:34Z',

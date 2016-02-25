@@ -9,8 +9,8 @@ describe('An authentication', () => {
       .send(pushData)
       .end((err, res) => {
         assert.notEqual(err, null)
-        assert.equal(err.status, 500)
-        assert.equal(res.text, 'ChatWork NG : 403')
+        assert.equal(err.status, 502)
+        assert.equal(res.text, 'Bad Gateway: ChatWork Response : 403')
         done()
       })
   })
